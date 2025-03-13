@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+#txt{
+    text-align: center;
+  text-decoration: underline;
+}
+.txt1{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    color: brown;
+    background-color:blanchedalmond;
+}

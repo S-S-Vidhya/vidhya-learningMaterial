@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 600px;
+    border: 1px solid black;
+}
+.logo{
+    height: 100px;
+    text-align: center;
+    background-color: magenta;
+    align-content: center;
+    letter-spacing: 2px;
+}
+.list{
+    background-color: pink;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+ul li{
+    display: inline; 
+    margin: 20px;  
+    color: red;
+}
+li:hover{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;  
+    text-underline-offset: 5px; 
+}
+.feature{
+    height: 150px;
+    text-align: center;
+    background-color: plum;
+}
+.card{
+    height: 200px;
+    border: 1px solid black;
+}
+.one{
+    width:33%;
+    height: 200px;
+    background-color: darkorchid;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    align-content: center;
+    
+   
+}
+.two{
+    width:33%;
+    height: 200px;
+    background-color: darkorchid;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    align-content: center;
+   
+}
+
+.three{
+    width:33%;
+    height: 200px;
+    background-color: darkorchid;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+
+.footer{
+    background-color: lightblue;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+}

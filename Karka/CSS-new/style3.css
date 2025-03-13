@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 600px;
+    margin: 50px;;
+}
+.header{
+   height: 100px;
+   display: flex;
+}
+.one{
+    width: 80%;
+    background-color: skyblue;
+    height: 100px;
+    border-radius: 40px 0 0 0;
+    position: relative;
+}
+.one h1{
+    position: relative;
+    left:150px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+}
+.one h3{
+    position: relative;
+    left: 150px;
+    top: 20px;
+    color: white;
+}
+.two{
+    width: 20%;
+    background-color: darkblue;
+    height: 100px;
+    border-radius: 0 40px 0 0 ;
+    position: relative;
+}
+.two h2{
+   color: white;
+   position: relative;
+   left: 20px;
+   top: 40px;
+}
+.two .tokyo{
+    color: white;
+    position: absolute;
+    left: 200px;
+    top: 38px;
+}
+.main{
+    height: 500px;
+    display: flex;
+}
+.three{
+    width: 80%;
+    border-radius: 0 0 0 40px ;
+    background-color: rgb(247, 246, 246);
+    background-image: url("https://pngimg.com/d/world_map_PNG25.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+}
+.three h4{
+    color: grey;
+    position: relative;
+    left: 150px;
+    top: 18px;
+}
+.three h2{
+    position: relative;
+    left: 150px;
+    top: 19px;
+}
+.four{
+    width: 20%;
+    background-color: rgb(247, 246, 246);
+    border-radius: 0 0 40px 0; 
+    position: relative;
+}

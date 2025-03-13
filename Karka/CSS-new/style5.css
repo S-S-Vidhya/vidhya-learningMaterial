@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+ul{
+    display: flex;
+    margin-right: 40px;
+}
+li{
+    list-style-type: none;
+    padding: 20px;
+}
+li:hover{
+    text-decoration: underline skyblue;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 25px;
+    color: white;
+    background-color: rgb(212, 215, 221);
+}
+main{
+    height: 300px;
+    border: 2px solid black;
+    background-image: url("https://img.freepik.com/premium-photo/man-watching-sunrise-beach-spain_621469-58.jpg");
+    background-repeat: no-repeat;
+    background-position:bottom center;
+    background-size: cover;
+}

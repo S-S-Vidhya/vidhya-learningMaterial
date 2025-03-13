@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-10</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        height: 650px;
+    }
+    header{
+        text-align: center;
+        align-content: center;
+        height: 100px;
+        background-color: gainsboro;
+    }
+    nav{
+        height: 100px;
+        margin: 5px 0;
+        background-color: gainsboro;
+        align-content: center;
+    }
+    ul{
+        display: flex;
+        justify-content: center;  
+    }
+    li{
+        list-style-type: none;
+        cursor: pointer;
+        margin: 0 15px;
+    }
+    li:hover{
+        color: blue;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+    .feature{
+        margin: 10px 0;
+        text-align: center;
+        height: 150px;
+        background-color: gainsboro;
+    }
+    .card{
+        margin: 5px 0;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .col{
+        width: 30%;
+        height: 200px;
+        background-color: gainsboro;
+    }
+    .col h5{
+        text-align: center;
+        margin: 10px;
+    }
+    footer{
+        height: 60px;
+        margin: 10px 0;
+        text-align: center;
+        align-content: center;
+        background-color: gainsboro;
+    }
+</style>
+<body>
+    <div class="container">
+      <header>
+        <h1>Logo</h1>
+      </header>
+      <nav>
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+      </nav>
+      <div class="feature">
+        <h2>Feature</h2>
+      </div>
+      <div class="card">
+        <div class="col">
+            <h5>Column one</h5>
+        </div>
+        <div class="col">
+            <h5>Column Two</h5>
+        </div>
+        <div class="col">
+            <h5>Column Three</h5>
+        </div>
+      </div>
+      <footer>
+        <p>@Copyright 2011</p>
+      </footer>
+    </div>
+</body>
+</html>

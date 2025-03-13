@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+            background-color: #e9ecef;
+        }
+        .list-group-item {
+            margin-bottom: 10px;
+        }
+        .btn {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Todo List</h1>
+        <form id="todo-form">
+            <div class="form-group">
+                <input type="text" id="todo-input" class="form-control" placeholder="Add a new todo" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Todo</button>
+        </form>
+        <ul id="todo-list" class="list-group mt-3"></ul>
+        <button id="clear-completed" class="btn btn-warning mt-3">Clear Completed</button>
+    </div>
+
+    <script>
+        const todoForm = document.getElementById('todo-form');
+        const todoInput = document.getElementById('todo-input');
+        const todoList = document.getElementById('todo-list');
+        const clearCompletedBtn = document.getElementById('clear-completed');
+
+        todoForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const todoText = todoInput.value;
+            const li = document.createElement('li');
+            li.className = 'list-group-item d-flex justify-content-between align-items-center';
+            li.textContent = todoText;
+
+            const completeBtn = document.createElement('button');
+            completeBtn.className = 'btn btn-success btn-sm';
+            completeBtn.textContent = 'Complete';
+            completeBtn.onclick = function() {
+                li.classList.toggle('completed');
+            };
+
+            const editBtn = document.createElement('button');
+            editBtn.className = 'btn btn-info btn-sm';
+            editBtn.textContent = 'Edit';
+            editBtn.onclick = function() {
+                const newText = prompt('Edit todo:', todoText);
+                if (newText) {
+                    li.firstChild.textContent = newText;
+                }
+            };
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'btn btn-danger btn-sm';
+            deleteBtn.textContent = 'Delete';
+            deleteBtn.onclick = function() {
+                todoList.removeChild(li);
+            };
+
+            li.appendChild(completeBtn);
+            li.appendChild(editBtn);
+            li.appendChild(deleteBtn);
+            todoList.appendChild(li);
+            todoInput.value = '';
+        });
+
+        clearCompletedBtn.addEventListener('click', function() {
+            const completedItems = document.querySelectorAll('.completed');
+            completedItems.forEach(item => {
+                todoList.removeChild(item);
+            });
+        });
+    </script>
+</body>
+</html>

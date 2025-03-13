@@ -1,0 +1,22 @@
+{
+    "person1":{
+        "name":"John",
+        "place":"NGL",
+        "no":"123456377"
+    },
+    "person2":{
+        "name":"vidhya",
+        "place":"Bangalore",
+        "no":"123456377"
+    },
+    "person3":{
+        "name":"July",
+        "place":"Madurai",
+        "no":"12345677"
+    },
+    "person4":{
+        "name":"Adithya",
+        "place":"chennai",
+        "no":"123456377"
+    }
+}

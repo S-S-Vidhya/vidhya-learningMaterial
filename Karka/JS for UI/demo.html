@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .class_list{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body id="body">
+    <!-- create a li using dom -->
+<!--     
+    <input type="text" id="text">
+    <button id="add" onclick="submit()">Submit</button>
+    <ul id="list">
+    </ul>
+        <script>
+            function submit(){
+              var a = document.getElementById("list")
+              var b = document.getElementById("text")
+              var c = document.createElement("li")
+              a.appendChild(c)
+              c.textContent = b.value
+              var a = document.getElementById("text").value=""
+            }
+        </script> -->
+
+       
+        <!-- Create a row using dom -->
+        <!-- <input type="text" id="text">
+        <button onclick="add()">Add</button>
+        <table id="table" border="1"style="border-collapse:collapse">
+            <tr>
+              <th>Name</th>
+            </tr>
+        </table>
+        <script>
+            function add(){
+                var a = document.getElementById("text").value
+                var b = document.getElementById("table")
+                var c = document.createElement("tr")
+                var d = document.createElement("td")
+                c.appendChild(d)
+                b.appendChild(c)
+                d.textContent = a
+                document.getElementById("text").value=''
+            }
+        </script> -->
+
+ 
+        <!-- Add row and increment the sno automatically -->
+       <!-- 
+        <input type="text" id="text">
+        <button onclick="add()">Add</button>
+        <table border="1" id="table"style="border-collapse: collapse;">
+         <tr>
+            <th>SNO</th>
+            <th>Product</th>
+         </tr>
+        </table>
+        <script>
+            let sno=1
+            function add(){
+                var a = document.getElementById("text").value
+                var b = document.getElementById("table")
+                var c = document.createElement("tr")
+                var d = document.createElement("td")
+                var e = document.createElement("td")
+                d.innerHTML=sno
+                e.innerHTML=a
+                c.appendChild(d)
+                c.appendChild(e)
+                b.appendChild(c)
+                sno++
+                document.getElementById("text").value=''
+            }
+        </script> -->
+
+        <!-- create two data in the table using dom -->
+        <!-- <label for="text1">Product</label>
+        <input type="text" id="text1"><br>
+        <label for="text2">price</label>
+        <input type="text" id="text2"><br>
+        <button onclick="add()">Add</button>
+        <table border="1" style="border-collapse: collapse;">
+            <caption>PRODUCT DETAILS</caption>
+           <thead>
+            <tbody id="table" >
+                <tr>
+                    <th>SNO</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </tbody>
+           </thead>
+        </table>
+        <script>
+            let sno=1
+            function add(){
+                var a = document.getElementById("text1").value
+                var b = document.getElementById("text2").value
+                var c = document.getElementById("table")
+                var row1 = document.createElement("tr")
+                var data1 = document.createElement("td")
+                var data2 = document.createElement("td")
+                var data3 = document.createElement("td")
+                data1.innerHTML = sno++
+                data2.textContent = a
+                data3.textContent = b
+                row1.append(data1)
+                row1.append(data2)
+                row1.append(data3)
+                table.append(row1)
+                document.getElementById("text1").value=''
+                document.getElementById("text2").value=''
+            }
+        </script> -->
+
+        <!-- add items in the dropdown using dom  -->
+        <!-- <input id="text" type="text">
+        <button onclick="add()">Add</button>
+        <select id="list"></select>
+        <script>
+            function add(){
+                var a = document.getElementById("text").value
+                var b = document.getElementById("list")
+                var c = document.createElement("option")
+                b.append(c)
+                c.textContent = a
+                document.getElementById("text").value=''
+            }
+        </script> -->
+ 
+      <!-- <select id="dropdown" onchange="updateParagraph()">
+    <option value="car">car</option>
+    <option value="apple1">apple1</option>
+    <option value="apple2">apple2</option>
+    <option value="apple3">apple3</option>
+</select>
+<p id="para"></p>
+<scrip>
+    function updateParagraph(){
+        var selectedValue = document.getElementById("dropdown").value;
+        var paragraph = document.getElementById("para");
+        paragraph.textContent = selectedValue;
+    }
+</script> -->
+
+ 
+<button onclick="change()">click</button>
+<script>
+    function change(){
+        var a = document.getElementById("body")
+        a.classList.toggle("class_list")
+    }
+
+</script>
+
+</body> 
+</html>

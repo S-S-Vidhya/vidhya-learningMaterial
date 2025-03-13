@@ -1,0 +1,16 @@
+{
+    "Details":[
+
+        {
+            "name":"vidhya",
+            "age":"21",
+            "number":"13451"
+        },
+
+        {
+            "name":"adithya",
+            "age":"22",
+            "number":"16351"
+        }
+    ]
+}

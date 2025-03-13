@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 900px;
+    border: 1px solid black;
+    background-color: gainsboro;
+}
+.header{
+    text-align: center;
+    align-content: center;
+    height: 100px;
+    border: 1px solid black;
+    background-color: white;  
+    margin: 5px;
+    margin-bottom: 0;
+}
+.header h6{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.nav{
+    height: 50px;
+    background-color: black;
+    margin: 0 5px;
+}
+ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 15px;
+    color: white;
+}
+.content{
+    height: 600px;
+    margin: 5px
+}
+.title1{
+    width: 70%;
+    background-color: white;
+    color: black;
+    height: 280px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.title1 p{
+    margin: 10px;
+}
+.image{
+    width: 97%;
+    height: 130px;
+    background-color: grey;
+    margin: 10px;
+}
+.image p{
+    padding-top: 10px;
+}
+.about{
+    width: 29.6%;
+    height:190px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.about_image{
+    width: 97%;
+    height:80px;
+    background-color: grey;
+    margin: 5px;
+}
+.about_image p{
+    padding-top: 10px;
+    margin: 10px;
+}
+.title2{
+    width: 70%;
+    background-color: white;
+    color: black;
+    height: 280px;
+    display: inline-block;
+    margin-top: 30px;
+    display: inline-block;
+}
+.title2 p{  
+     margin: 10px;
+}
+ 
+.post{
+    width: 29.6%;
+    height: 250px;
+    background-color: white;
+    display:inline-block;
+    vertical-align: top;
+    margin-top:-70px;
+}
+.post_image{
+    width: 97%;
+    height: 190px;
+    background-color: grey;
+    margin: 5px;
+}
+.follow{
+    width: 29.6%;
+    height: 80px;
+    background-color: white;
+    margin-left: 70.4%;
+    margin-top: -120px;
+}
+.footer{
+    height: 100px;
+    background-color: gray;
+    text-align: center;
+    align-content: center;
+    margin-top: 80px;
+}
+

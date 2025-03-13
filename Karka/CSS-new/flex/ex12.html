@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-12</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 800px;
+            background-color: grey;
+        }
+
+        header {
+            background-color: grey;
+            height: 100px;
+            text-align: center;
+            align-content: center;
+            color: white;
+        }
+
+        nav {
+            height: 100px;
+            background-color: rgb(191, 13, 147);
+            margin: 5px 10px;
+        }
+
+        .list_1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .l1{
+            list-style-type: none;
+            margin: 0 15px;
+            cursor: pointer;
+
+        }
+
+        .l1:hover {
+            color: white;
+            text-decoration: underline yellow;
+            text-underline-offset: 7px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 0;
+            height: 40px;
+            border-radius: 25%;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        input {
+            padding: 10px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:hover,
+        input:focus {
+            border-color: rgb(191, 13, 147);
+            box-shadow: 0 0 5px rgba(191, 13, 147, 0.5);
+        }
+
+        .content {
+            height: 500px;
+            display: flex;
+        }
+
+        .article {
+            width: 80%;
+            background-color: white;
+            height: 480px;
+            margin: 5px 10px;
+        }
+
+        .article h1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .article p {
+            text-align: justify;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .article h2 {
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .related{
+            width: 20%;
+        }
+        .related h1{
+            text-align: center;
+            color: white;
+        }
+        .list_2{
+            text-decoration: underline;
+            margin-left: 20px;
+        }
+        .l2{
+            margin: 30px;
+            color:indigo;  
+        }
+        .list_2 li::marker {
+        color:black;
+        }
+        footer{
+            align-content: center;
+            height: 50px;
+            background-color: white;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav>
+            <ul class="list_1">
+                <li class="l1">HOME</li>
+                <li class="l1">OUR TEAM</li>
+                <li class="l1">PROJECTS</li>
+                <li class="l1">CONTACT</li>
+                <li class="l1"><input type="search" placeholder="Search query"></li>
+                <li class="l1"><button type="submit">Go!</button></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="article">
+                <h1>Article heading</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, at. Praesentium, quaerat cum.
+                    Voluptatibus exercitationem quidem repudiandae
+                    praesentium ut blanditiis error dolore, laudantium, tempora alias deleniti, enim quibusdam illum
+                    facere. Doloremque itaque voluptates
+                    tempore modi cum inventore aliquam voluptatum facere reprehenderit. Necessitatibus aliquid dolorem
+                    sunt unde deleniti eveniet autem voluptatibus!</p>
+                <h2>subsection</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam hic aliquid corrupti amet quam
+                    assumenda excepturi. Consequatur non exercitationem earum eaque in praesentium provident.
+                    Ratione placeat odit beatae pariatur cupiditate.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nesciunt laudantium praesentium
+                    dignissimos dolorem tempore
+                    excepturi, aliquam est
+                    magnam quam dolore perspiciatis doloremque asperiores quasi blanditiis illum voluptatum tempora
+                    veniam!</p>
+                <h2>Another subsection</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium minima at totam saepe deleniti
+                    sequi aliquam quaerat tenetur atque cumque deserunt, temporibus architecto similique dolore
+                    voluptatibus. Nihil culpa eius eum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis quasi debitis maxime
+                    sapiente doloribus nulla fuga. Blanditiis repellat corporis, iste itaque rerum pariatur asperiores
+                    illum voluptates
+                    id doloremque dolore?</p>
+            </div>
+            <div class="related">
+                 <h1>Related</h1>
+                 <ul class="list_2">
+                    <li class="l2">Oh I do like to be beside the seaside</li>
+                    <li class="l2">Oh I do like to be beside the sea</li>
+                    <li class="l2">Although in the north of England</li>
+                    <li class="l2">it never stops raining</li>
+                    <li class="l2">Oh well...</li>
+                 </ul>
+            </div>
+        </div>
+        <footer>
+            <h5>@Copyrights.All Rights reserved</h5>
+        </footer>
+    </div>
+</body>
+
+</html>

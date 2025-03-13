@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-11</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   .container{
+    height: 950px;
+    border:1px solid black;
+    background-color: grey;
+   }
+   header{
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    background-color: white;
+    margin: 5px;
+   }
+   nav{
+    height: 50px;
+    background-color: black;
+    margin: 0 5px;
+   }
+   ul{
+    display: flex;
+   }
+   li{
+    list-style-type: none;
+    color: white;
+    margin: 15px;
+    cursor: pointer;
+   }
+   li:hover{
+    color: yellow;
+    text-decoration: underline red;
+    text-underline-offset: 7px;
+   }
+   .content{
+    height: 680px;
+    display: flex;
+   }
+   .main_content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 680px;
+   }
+   .title1{
+    height: 320px;
+    background-color: white;
+    width: 100%;
+    margin: 5px;
+   }
+   .title1 h2{
+    margin: 5px;
+   }
+   .title1 h6{
+    margin: 5px;
+    margin-top: 10px;
+   }
+   .title1 .image{
+    background-color: grey;
+    width: 99%;
+    height: 150px;
+    margin: 5px;
+    margin-top: 10px;
+   }
+   .title1 .image h5{
+    padding:15px;
+   }
+   .title2{
+    height: 320px;
+    background-color: white;
+    width: 100%;
+    margin: 5px;
+    margin-top: 20px;
+   }
+   .title2 h2{
+    margin: 5px;
+   }
+   .title2 h6{
+    margin: 5px;
+    margin-top: 10px;
+   }
+   .title2 .image{
+    background-color: grey;
+    width: 99%;
+    height: 150px;
+    margin: 5px;
+    margin-top: 10px;
+   }
+   .title2 .image h5{
+    padding:15px;
+   }
+   .main_content2{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+   }
+   .about{
+    width: 96%;
+    margin: 5px;
+    background-color: white;
+    height: 250px;
+    margin-left: 10px;
+   }
+  .about h2{
+    margin:  5px;
+  }
+  .about .about_image{
+    width: 95%;
+    height: 150px;
+    background-color: grey;
+    margin: 10px;
+  }
+  .about_image h5{
+   padding: 15px;
+  }
+  .post{
+    background-color: white;
+    margin: 5px;
+    width: 96%;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 260px;
+  }
+  .post h2{
+    margin: 5px;
+  }
+  .post .post_image{
+    background-color: grey;
+    width: 95%;
+    height: 200px;
+    margin: 10px;
+  }
+  .post_image h4{
+    padding: 20px;
+  }
+  .follow{
+    background-color: white;
+    width: 96%;
+    margin: 5px;
+    margin-left: 10px;
+    height: 100px;
+  }
+  .follow h2{
+    margin: 5px;
+  }
+  footer{
+    text-align: center;
+    align-content: center;
+    height: 100px;
+    background-color: white;
+  }
+</style>
+<body>
+    <div class="container">
+         <header>
+            <h1>Karka UI Layout</h1>
+            <h6 style="margin-top: 20px;">Develop your skills bu our tech</h6>
+         </header>
+         <nav>
+            <ul>
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+                <li style="margin-left: 85%;">Link</li>
+            </ul>
+         </nav>
+         <div class="content">
+         <div class="main_content">
+            <div class="title1">
+                 <h2>TITLE HEADING</h2>
+                 <h6>Title description,Dec 7,2017</h6>
+                 <div class="image">
+                    <h5>Image</h5>
+                 </div>
+                 <p style="margin: 5px; margin-top: 10px;">Some text...</p>
+                 <p style="margin: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error dolor vel.
+                    Veniam repellat fugiat illum enim quasi quia numquam! 
+                    Voluptatum eum quae ea facere minus suscipit. Quisquam, error dolorem.</p>
+            </div>
+
+            <div class="title2">
+                <h2>TITLE HEADING</h2>
+                <h6>Title description,Dec 7,2017</h6>
+                <div class="image">
+                   <h5>Image</h5>
+                </div>
+                <p style="margin: 5px; margin-top: 10px;">Some text...</p>
+                <p style="margin: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error dolor vel.
+                   Veniam repellat fugiat illum enim quasi quia numquam! 
+                   Voluptatum eum quae ea facere minus suscipit. Quisquam, error dolorem.</p>
+           </div>
+
+           
+         </div>
+
+         <div class="main_content2">
+            <div class="about">
+               <h2>About me</h2>
+               <div class="about_image">
+                <h5>Image</h5>
+               </div>
+               <p style="margin: 10px; margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ullam tempora est quae,
+               </p>
+            </div>
+
+           <div class="post">
+            <h2>Popular post</h2>
+            <div class="post_image">
+                <h4>Image</h4>
+                <h4>Image</h4>
+                <h4>Image</h4>
+            </div>
+           </div>
+           <div class="follow">
+            <h2>Follow me</h2>
+            <p style="margin: 5px;">Some text...</p>
+           </div>
+         </div>
+        </div>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </div>
+</body>
+</html>

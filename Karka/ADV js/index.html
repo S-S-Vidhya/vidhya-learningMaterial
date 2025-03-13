@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adj vs</title>
+</head>
+<body>
+    <script>
+    //Template literals
+    //    let  name = "Vidhya"
+    //    console.log( `name : ${name}`)     
+    
+    // let a = 10
+    // let b = 20
+    // let  output = `${a} + ${b} = ${a+b}`
+    // console.log(output)
+
+    //Multiline string
+    //     let output = `Now i am 
+    // learning js and react`
+    //     console.log(output)
+    
+    //    let name = "Arun"
+    //    let age = 25
+    //    let place = "Nagercoil"
+    //    let output = `My name is ${name} , and my age is ${age} , then i am from ${place} , In 2030 i am ${age+5} years old`
+    //    console.log(output)
+
+    //Expression evaluation
+    //  let a = 10
+    //  let b = 20
+    //  let result = `${a>b?'a is greater':'b is greater'}`
+    //  console.log(result)
+
+    //using object
+    // let details = {
+    //     name: "Vidhya",
+    //     age:21,
+    //     place:"Thituvilai"
+    // }
+    // let result = `My name is ${details.name} and my age is ${details.age} and i from ${details.place}`
+    // console.log(result)
+
+    //spread operator
+    // let num = [1,2,3,4]
+    // let num2 = [...num,5,6,7,8,9,10]
+    // console.log(num2)
+
+    //spread with objects
+    // let details = {
+    //     name:"vidhya",
+    //     age:25
+    // }
+    // let result ={...details,place:'ngl', CGPA:90}
+    // console.log(result)
+
+    // let a =[1,2,3,4,5]
+    // let b =[6,7,8,9,10]
+    // let c =[...a,...b]
+    // console.log(c)
+
+    // function sum(a,b,c)
+    // {
+    //     return a+b+c
+    // }
+    // const num = [1,5,5]
+    // console.log(sum(...num))
+
+    // let a = [1,2,3,4,5]
+    // let b = [one,two,...rest]=a
+    // console.log(b)
+    // console.log(...rest)
+
+    // let obj = {
+    //     name:"vidhya",
+    //     age:21,
+    //     place:"ngl",
+    //     cgpa:95
+    // }
+    // let result = {name, cgpa, ...bal}=obj
+    // console.log(bal)
+    // console.log(cgpa)
+
+
+    // map function   
+    // let a = [1,2,3,4,5]
+    // let result = a.map(user => user * 5)
+    // console.log(result)
+  
+    // // change the first letter into uppercase
+    // let car = ["bMW","audi","mahendra","honda","toyoto"]
+    // let result = car.map(user => user[0].toUpperCase() + user.slice(1))    
+    // console.log(result)
+
+    // let data =[{
+    //     name:"vidhya",
+    //     age:21,
+    //     place:"ngl"
+    // }]
+    // let a = data.map(user => user.name)
+    // console.log(a)
+
+    // const num = [10,20,30,40,50]
+    // const finalnum = num.map((number,index)=>`${index + 1}:${number}`)
+    // console.log(finalnum)
+
+    // let num = [5,10,15,20,25]
+    // let result = num.map(number => number%2 ==0 ? number/2 : number *2)
+    // console.log(result)
+
+    // let num = [5,10,15,20,25]
+    // let result = num.map(number =>
+    // {
+    //   if (number%2==0){
+    //         return number/2
+    //     }
+    //     else{
+    //         return number*2
+    //     }
+    // })
+    // console.log(result)
+
+    // let data = [[1,2],[3,4],[4,5]]
+    // let result = data.map(number =>number.map(num => num*2))
+    // .flat()
+    // console.log(result)
+
+    // let data = [1,2,3,4,5,6,7,8,9,10]
+    // let result = data.filter(number => number%2==0)
+    // console.log(result)
+
+    const students = [{name: 'John',age:17},{name:"ashik",age:20},{name:"suresh",age:18},{name:"ram",age:18}]
+const result1 = students.filter(student => student.age >= 18)
+console.log(result1)
+    </script>
+</body>
+</html>

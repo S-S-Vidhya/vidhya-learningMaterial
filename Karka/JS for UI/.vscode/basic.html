@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- <button onclick="handle_click()">click</button>
+    <span id="text"> Hi </span>
+    <h1>Hello</h1>
+    <script>
+        function handle_click(){
+            var a = document.getElementById("text");
+            a.innerHTML="<h1> Hello </h1>"
+        }
+    </script> -->
+
+    <!-- <button onclick="handle_click()">Click</button>
+    <h1 id="head">Hi</h1>
+    <script>
+        function handle_click(){
+            var a = document.getElementById("head").style.backgroundColor="red";
+        }
+    </script> -->
+
+    <!-- <div id="head" onmouseover="over()"onmouseleave="leave()" >Hello</div>
+    <script>
+        function over(){
+            document.getElementsById("head").style.color="red";
+        }
+        function leave(){
+            document.getElementsById("head").style.color="black";
+        }
+    </script> -->
+
+    <div class="div" onmouseover="over()" onmouseleave="leave()" style="background-color: greenyellow; width: 30%; height: 100px; transition: width 0.5s;"></div>
+    <script>
+    function over() {
+        document.getElementsByClassName("div")[0].style.width = "70%";
+    }
+    function leave(){
+        document.getElementsByClassName("div")[0].style.width = "30%";
+      
+    }
+    </script>
+  
+    <!-- <div id="div" onmouseover="over()" onmouseleave="leave()" style="background-color: red;border-radius: 50%; width: 100px; height: 100px; margin: 150px auto;"></div>
+   <script>
+    function over(){
+        document.getElementById("div").style.transform = "scale(2.5)";
+        document.getElementById("div").style.backgroundColor="green"
+    }
+    function leave(){
+        document.getElementById("div").style.transform = "scale(1)";
+        document.getElementById("div").style.backgroundColor="red"
+
+    } 
+</script>-->
+ 
+<!-- <di id="div_1" onmouseover="over()" onmouseleave="leave()" style="background-color: red;border-radius: 50%; width: 100px; height: 100px;"></di>
+<div id="div_1" onmouseover="over()" onmouseleave="leave()" style="background-color: red;border-radius: 50%; width: 100px; height: 100px;"></div>
+<button id="btn" onclick="handle_click()">Click</button>
+<h6 id="head" class="head1">Hello</h6>
+<script>
+    function handle_click(){
+        // document.querySelector("#head").innerHTML="<h1>Hello</h1>"
+        document.querySelector(".head1").innerText="Hello Bhaiya"
+        document.querySelector("#head").style.color="red"
+    }  
+</script> 
+
+<p>Finding HTML Elements by Query Selector</p>
+<p class="intro">Hello World!.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+<button onclick="handle_click()">click</button>
+<p id="demo"></p>
+
+<script>
+    function handle_click(){
+        
+        document.querySelectorAll("p.intro")[0].innerHTML="<h1>Hi</h1>"
+        document.querySelectorAll("p.intro")[1].innerHTML="<h2>Query</h2>"
+    }
+
+</script>
+
+<div class="container">
+    <p class="text">Hello World!</p>
+    <p class="text">This is a paragraph.</p>
+    <p class="text">This is another paragraph.</p>
+    <button onclick="handle_click()">click</button>
+</div>
+
+<script>
+    function handle_click(){
+        const textElements = document.querySelectorAll(".text");
+    
+        for (let i = 0; i < textElements.length; i++) {
+            textElements[i].style.color = "blue";
+        }
+    }
+</script> -->
+
+<!-- <div id="div" style="background-color: magenta;color: white;width: 200px; height: 100px;">
+</div>
+<script>
+    var a = document.createElement("p")
+    var b = document.getElementById("div")
+    b.appendChild(a)
+    a.textContent = "hello world"
+    a.innerHTML = "<h1>HELLO</h1>"
+</script> -->
+
+<input type="text" id="input" style="width: 20%;height: 50px;">
+<button onclick="handle_click()" style="padding: 10px;">Submit</button>
+<div id="div"></div>
+<!-- <script>
+    function handle_click()
+    {
+        var a = document.getElementById("input");
+        var b = document.createElement("ol")
+        var c = document.getElementById("div");
+        c.appendChild(b)
+        var d = document.createElement("li");
+        b.appendChild(d);
+        d.textContent = a.value;
+        }  
+</script> -->
+
+<script>
+var olElement = document.createElement("ol");
+var divElement = document.getElementById("div");
+divElement.appendChild(olElement);
+
+function handle_click()
+{
+    var a = document.getElementById("input");
+    var liElement = document.createElement("li");
+    olElement.appendChild(liElement);
+    liElement.textContent = a.value;
+}
+</script>
+</body>
+</html>

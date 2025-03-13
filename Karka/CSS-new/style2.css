@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.container{
+    height: 650px;
+    display: flex;
+    margin:100px 10px;
+    overflow: hidden;
+}
+.header{
+    height:650px;
+    width: 80%;
+}
+.left_header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(215, 31, 31);
+    border-radius:70px 0 0 0;
+    position: relative
+}
+.left_header img{
+    position: absolute;
+    width: 550px;
+    height: 130px;
+    left: 600px;
+    border-radius: 0 0 1000px 0;
+}
+.content{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-color: rgb(247, 246, 246);
+    background-image: url("https://pngimg.com/d/world_map_PNG25.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+.left_footer{ 
+    height: 50px;
+    background-color: rgb(215, 31, 31);
+    border-radius: 0 0 0 50px;
+}
+.main{
+    height: 650px;
+    width: 20%;
+    position: relative;
+}
+.right_header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(175, 31, 31);
+    border-radius: 0 70px 0 0;
+    position: relative;
+}
+.right_header h2{
+    color: white;
+    position: absolute;
+    left: 30px;
+    top: 55px;
+    font-size: 30px;
+ }
+ .right_header .tokyo{
+     color: white;
+     position: absolute;
+     left: 230px;
+     top: 55px;
+     font-size: 30px;
+ }
+.right_content{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(247, 246, 246);
+    position: relative;
+}
+.right_footer{
+    height: 50px;
+    background-color: rgb(215, 31, 31);
+    border-radius: 0 0 50px 0;
+}

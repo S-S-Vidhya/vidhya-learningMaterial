@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getItem</title>
+</head>
+<body>
+
+    <!-- single key value pair -->
+    <!-- <script>
+       let a = localStorage.getItem("name")
+       let p = document.createElement("p")
+       p.innerHTML = a
+       document.body.append(p)
+    </script> -->
+
+
+    <!-- Multiple values -->
+    <!--  <script>
+     let a = JSON.parse(localStorage.getItem("arr"))
+     console.log(a)
+   
+      let p = document.createElement("p")
+       p.innerHTML = a
+        document.body.append(p)
+    </script>   -->
+  
+     <script>
+
+         let a = JSON.parse(localStorage.getItem("user"))
+         let p = document.createElement("p")
+         p.innerHTML = `Name:${a.Name}<br> Age:${a.Age} <br>City:${a.city}`
+         document.body.append(p)
+     </script>
+
+</body>
+</html>

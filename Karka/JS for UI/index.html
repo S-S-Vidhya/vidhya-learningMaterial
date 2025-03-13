@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Mouse over -->
+     <p id="btn" onmouseover="over()">Click</p>
+    <script>
+        function over() {
+            var x = document.getElementById("btn");
+            alert("mouse over!")
+        }
+    </script> 
+
+    <!-- Mouse leave -->
+     <p id="btn" onmouseleave="leave()">Click</p>
+    <script>
+        function leave() {
+            var x = document.getElementById("btn");
+            alert("mouse leave!")
+        }
+    </script> 
+
+    <!--onkey up-->
+    <input type="text" id="text1" onkeyup="handle_keyup()">
+    <script>
+        function handle_keyup() {
+            var a=document.getElementById("text1").value
+            console.log(a)
+        }
+    </script>
+
+    <!--Mouse enter  -->
+    <div id="enter" onmouseenter="mouseenter()" style="background-color: red; width: 50%; height: 100px;">
+    </div>
+    <script>
+        function mouseenter(){
+            var a=document.getElementById("enter")
+            a.style.backgroundColor="greenyellow"
+        }
+    </script>
+
+    <button id="btn1"  onmousedown="mouseUp()">Click me</button>
+    <script>
+    // function mouseDown(){ 
+    // document.getElementById('btn1').style.backgroundColor = 'darkblue';
+    // console.log('Mouse button pressed down'); 
+    // } 
+    function mouseUp() { 
+     console.log("mouse button released")
+} 
+
+</script>
+</body>
+</html>

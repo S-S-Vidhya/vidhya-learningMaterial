@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            margin: 100px;
+        }
+        .header{
+            background-color: olive;
+            height: 150px;
+        }
+        .col{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+       }
+        .col-1{
+            background-color: skyblue;
+            height: 250px;
+            flex-basis: 32.5%;
+        }
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .cards-1{
+            background-color: grey;
+            height: 200px;
+            width: 24%;
+        }
+        @media screen and (max-width:1024px){
+           .col-1{
+               flex-basis: 100%;
+               margin: 5px;
+           }
+           .cards-1{
+            flex-basis: 40%;
+            margin: 5px;
+           }
+        }
+      @media screen and (max-width:728px){
+        .cards-1{
+            flex-basis: 100%;
+        }
+      }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="col">
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+        </div>
+         <div class="cards">
+            <div class="cards-1"></div>
+            <div class="cards-1"></div>
+            <div class="cards-1"></div>
+            <div class="cards-1"></div>
+         </div>
+    </div>
+</body>
+</html>
